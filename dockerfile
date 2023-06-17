@@ -54,8 +54,11 @@ RUN python3.11 -m pip install --upgrade pip && \
     python3.11 -m pip install hyperopt && \
     python3.11 -m pip install hpsklearn
 
+# TODO:
+# ↓追加でインストールしたもの。後でまとめる。
 RUN python3.11 -m pip install jupyterlab
-
+RUN apt-get install -y git
+# ↑ここまで
 WORKDIR /
 RUN mkdir /work  
 
